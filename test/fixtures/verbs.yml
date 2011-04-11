@@ -5,9 +5,11 @@ one:
   presens: MyString
   imp: MyString
   tags: MyString
+  hu: MyString
 
 two:
   inf: MyString
   presens: MyString
   imp: MyString
   tags: MyString
+  hu: MyString

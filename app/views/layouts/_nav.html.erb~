@@ -1,0 +1,5 @@
+<nav>
+  <% link_to 'Nouns', noun_path %>
+  &nbsp;
+
+</nav>

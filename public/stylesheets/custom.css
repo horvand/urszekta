@@ -1,0 +1,52 @@
+body {
+    background: yellow !important;
+}
+
+h1 {
+    border-bottom: 2px solid blue;
+    font-variant: small-caps;
+}
+.main_nav {
+    border: 1px solid cyan;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    background: blue;
+    color: yellow;
+    padding: 1ex;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    font-variant: small-caps;
+}
+.main_nav a {
+    color: yellow;
+    text-decoration:none;
+}
+.main_nav a:visited {
+    color: yellow;
+    text-decoration:none;
+}
+
+.ordlista tr th {
+    min-width: 10ex;
+    text-align:left;
+    color: gray;
+    border-bottom: thin solid #000;
+}
+/*
+.ordlista .head {
+    border-bottom: thin solid #000;
+    color:red;
+}
+*/
+.ordet {
+    font-weight: bold;
+}
+
+.oart {
+    text-align: right;
+}

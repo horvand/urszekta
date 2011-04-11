@@ -1,0 +1,4 @@
+.ordlista tr th {
+    min-width: 10ex;
+    color: gray;
+}

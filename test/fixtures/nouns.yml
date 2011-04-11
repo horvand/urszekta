@@ -7,6 +7,7 @@ one:
   pl: MyString
   defpl: MyString
   tags: MyString
+  hu: MyString
 
 two:
   oart: MyString
@@ -15,3 +16,4 @@ two:
   pl: MyString
   defpl: MyString
   tags: MyString
+  hu: MyString
