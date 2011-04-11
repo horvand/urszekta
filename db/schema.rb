@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110411092415) do
+ActiveRecord::Schema.define(:version => 20110411113139) do
 
   create_table "nouns", :force => true do |t|
     t.string   "oart"
@@ -18,6 +18,14 @@ ActiveRecord::Schema.define(:version => 20110411092415) do
     t.string   "def"
     t.string   "pl"
     t.string   "defpl"
+    t.string   "tags"
+    t.string   "hu"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "others", :force => true do |t|
+    t.string   "word"
     t.string   "tags"
     t.string   "hu"
     t.datetime "created_at"

@@ -1,4 +1,6 @@
 Urszekta::Application.routes.draw do
+  resources :others
+
   resources :verbs
 
   resources :nouns
