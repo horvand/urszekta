@@ -1,0 +1,17 @@
+class Searcher
+  @@table_col = {
+    'Noun' => ['word', 'def', 'pl', 'defpl', 'hu'],
+    'Verb' => ['inf', 'presens', 'imp', 'hu']
+  }
+
+  def search_all(str)
+    hits=[]
+    @@table_col.each do |table, fields|
+      fields.each do |field|
+        h = eval <<-END
+             #{table}.where("#{field} LIKE ?", "%#{str}%")
+        END
+        hits += h
+      end
+    end
+    hits.sort.uniq

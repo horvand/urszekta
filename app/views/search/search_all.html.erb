@@ -1,0 +1,11 @@
+
+<% if @hits.size == 0 %>
+	<div class="notfound">Ingenting. . .</div>
+<!-- size == 1 handled in controller -->
+<% else %>
+	 <% @hits.each do |hit| %>
+	<div class="resultlist">
+	<%= link_to hit.word, "/#{hit.class.to_s.downcase}s/#{hit.id}" %>
+	</div>
+	<% end %>
+<% end %>

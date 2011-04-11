@@ -3,5 +3,7 @@
   &nbsp;<%= link_to 'Nouns', nouns_path %>
   &nbsp;<%= link_to 'Verbs', verbs_path %>
   &nbsp;<%= link_to 'Other', others_path %>
-
+  &nbsp;<%= form_tag('/search', :method => "get") do %>
+          <%= text_field_tag :q %><%= submit_tag "Sök" %>
+        <% end %>
 </nav>
