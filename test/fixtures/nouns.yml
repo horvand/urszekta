@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  oart: MyString
+  word: MyString
+  def: MyString
+  pl: MyString
+  defpl: MyString
+  tags: MyString
+
+two:
+  oart: MyString
+  word: MyString
+  def: MyString
+  pl: MyString
+  defpl: MyString
+  tags: MyString

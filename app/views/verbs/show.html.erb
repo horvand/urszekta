@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Inf:</b>
+  <%= @verb.inf %>
+</p>
+
+<p>
+  <b>Presens:</b>
+  <%= @verb.presens %>
+</p>
+
+<p>
+  <b>Imp:</b>
+  <%= @verb.imp %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @verb.tags %>
+</p>
+
+
+<%= link_to 'Edit', edit_verb_path(@verb) %> |
+<%= link_to 'Back', verbs_path %>

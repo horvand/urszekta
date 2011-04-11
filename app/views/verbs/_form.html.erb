@@ -1,0 +1,33 @@
+<%= form_for(@verb) do |f| %>
+  <% if @verb.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@verb.errors.count, "error") %> prohibited this verb from being saved:</h2>
+
+      <ul>
+      <% @verb.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :inf %><br />
+    <%= f.text_field :inf %>
+  </div>
+  <div class="field">
+    <%= f.label :presens %><br />
+    <%= f.text_field :presens %>
+  </div>
+  <div class="field">
+    <%= f.label :imp %><br />
+    <%= f.text_field :imp %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br />
+    <%= f.text_field :tags %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

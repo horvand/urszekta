@@ -1,0 +1,29 @@
+<h1>Listing verbs</h1>
+
+<table>
+  <tr>
+    <th>Inf</th>
+    <th>Presens</th>
+    <th>Imp</th>
+    <th>Tags</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @verbs.each do |verb| %>
+  <tr>
+    <td><%= verb.inf %></td>
+    <td><%= verb.presens %></td>
+    <td><%= verb.imp %></td>
+    <td><%= verb.tags %></td>
+    <td><%= link_to 'Show', verb %></td>
+    <td><%= link_to 'Edit', edit_verb_path(verb) %></td>
+    <td><%= link_to 'Destroy', verb, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Verb', new_verb_path %>
