@@ -2,7 +2,7 @@
 M="${1:-XXX}"
 
 cd `dirname $0`
-echo "=== git in `pwd` (comment: $M)==="
+echo "=== git in `pwd` (comment: $M) ==="
 git add .
 git commit -m "$M"
 git push #github
