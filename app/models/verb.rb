@@ -6,4 +6,8 @@ class Verb < ActiveRecord::Base
     self.inf=x
   end
 
+  def cite
+    self.presens
+  end
+
 end
