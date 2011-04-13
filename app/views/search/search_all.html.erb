@@ -5,7 +5,7 @@
 <% else %>
 	 <% @hits.each do |hit| %>
 	<div class="resultlist">
-	<%= link_to hit.cite, "/#{hit.class.to_s.downcase}s/#{hit.id}" %>
+	<%= link_to hit.cite, "/#{hit.class.table_name}/#{hit.id}" %>
 	</div>
 	<% end %>
 <% end %>

@@ -6,8 +6,8 @@ class SearchController < ApplicationController
     @hits = search_words(query)
     if @hits.size == 1
       hit = @hits[0]
-      type = hit.class.to_s.downcase
-      redirect_to "/#{type}s/#{hit.id}"
+      type = hit.class.table_name
+      redirect_to "/#{type}/#{hit.id}"
     end
   end
 
